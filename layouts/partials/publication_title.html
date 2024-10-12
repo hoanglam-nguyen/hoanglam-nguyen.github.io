@@ -1,0 +1,23 @@
+<div class="post-line">
+    <p class="paper-venue">{{ .Param "venue" }}</p>
+
+    <div>
+        <p class="paper-title">
+            {{ .Title }}
+        </p>
+        <p class="paper-authors"> {{ .Param "authors" | markdownify }} </p>
+        <p class="mini-abstract"> Mini abstract: {{ .Summary }} </p>
+        <p class="paper-booktitle"> {{ .Param "booktitle" | markdownify }} </p>
+        {{ if gt (len .Content) 0 }}
+            <a class="line-link" href="{{ .RelPermalink }}" style="display:inline-block;">[Details]</a>
+        {{ end }}
+        <a class="line-link" href="{{ .Params.publication }}" style="display:inline-block;">[Publication]</a>
+        <a class="line-link" href="/preprints/{{ .Params.preprint }}" style="display:inline-block;">[Preprint]</a>
+        {{ if isset .Params "artifact" }}
+            <a class="line-link" href="{{ .Params.artifact }}" style="display:inline-block;">[Artifact]</a>
+        {{ end }}
+        {{ if isset .Params "repository" }}
+            <a class="line-link" href="{{ .Params.repository }}" style="display:inline-block;">[Repository]</a>
+        {{ end }}
+    </div>
+</div>

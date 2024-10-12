@@ -1,0 +1,18 @@
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<article class="post">
+  <div class="post-line">
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="{{ .Params.repository }}" data-icon="octicon-star" data-show-count="true" aria-label="Star this project on GitHub">Star</a>
+    <div class="project-box">
+        <p class="project-title">
+            {{ .Title }}
+        </p>
+        <p class="line-authors"> {{ .Summary | markdownify }} </p>
+        {{ if gt (len .Content) 0 }}
+            <a class="line-link" href="{{ .RelPermalink }}" style="display:inline-block;">[Details]</a>
+        {{ end }}
+        <a class="line-link" href="{{ .Params.repository }}" style="display:inline-block;">[View on GitHub]</a>
+    </div>
+  </div>
+  <!-- Place this tag where you want the button to render. -->
+</article>

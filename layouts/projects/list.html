@@ -1,0 +1,9 @@
+
+{{ define "main" }}
+
+{{  range $i, $e := .Data.Pages }}
+    <br>
+    {{ partial "project_li.html" $e }}
+{{ end }}
+
+{{ end }}

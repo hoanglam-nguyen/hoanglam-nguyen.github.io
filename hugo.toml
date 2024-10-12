@@ -1,0 +1,80 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Hoang Lam Nguyen'
+theme = 'barks'
+
+[params.head]
+author = "Hoang Lam Nguyen"
+description = "Hi, I'm Lam, welcome to my personal website."
+keywords = [
+    "hoang lam nguyen",
+    "humboldt universitaet",
+    "berlin",
+    "computer science",
+    "academic",
+    "software engineering",
+    "software testing",
+    "fuzzing",
+]
+
+[params.navigation]
+show_navigation = true
+
+[params.footer]
+show_footer = true
+
+[params.typography]
+title_font = "Inconsolata"
+body_font = "Source Sans Pro"
+
+[params.colors]
+theme_color = "#FFFFFC"
+background_color = "#fcfbf9"
+#text_color = "#231F20"
+text_color = "#2B2B2B"
+link_color = "#44617B"
+
+[params.social]
+[params.social.email]
+name = "E-Mail"
+class = "fas fa-envelope"
+url = "mailto:hoang.lam.nguyen@hu-berlin.de"
+weight = 1
+[params.social.github]
+name = "GitHub"
+class = "fab fa-github"
+url = "https://github.com/hoanglam-nguyen"
+weight = 2
+[params.social.google_scholar]
+name = "Google Scholar"
+class = "ai ai-google-scholar"
+url = "https://scholar.google.de/citations?user=Y171jFgAAAAJ&hl=en"
+weight = 3
+[params.social.dblp]
+name = "dblp"
+class = "ai ai-dblp"
+url = "https://dblp.org/pid/214/0485.html"
+weight = 4
+[params.social.linkedin]
+name = "LinkedIn"
+class = "fab fa-linkedin"
+url = "https://de.linkedin.com/"
+weight = 5
+
+[menu]
+[[menu.main]]
+name = 'About'
+url = '/'
+weight = 10
+[[menu.main]]
+name = 'Publications'
+url = '/publications'
+weight = 30
+[[menu.main]]
+name = 'Projects'
+url = '/projects'
+weight = 40
+[[menu.main]]
+name = 'Teaching'
+url = '/teaching'
+weight = 50
