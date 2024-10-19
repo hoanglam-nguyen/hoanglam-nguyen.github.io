@@ -67,8 +67,8 @@ name = 'About'
 url = '/'
 weight = 10
 [[menu.main]]
-name = 'Publications'
-url = '/publications'
+name = 'Research'
+url = '/research'
 weight = 30
 [[menu.main]]
 name = 'Projects'

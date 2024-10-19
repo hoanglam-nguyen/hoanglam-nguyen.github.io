@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h2>Selected Publications</h2>
+<p class="header-subtitle">
+    View full publication list on
+    <a href="https://scholar.google.de/citations?user=Y171jFgAAAAJ&hl=en">[Google Scholar]</a>
+    or
+    <a href="https://dblp.org/pid/214/0485.html">[dblp]</a>.
+</p>
+{{  range $i, $e := .Data.Pages }}
+    <br>
+    {{ partial "publication_li.html" $e }}
+{{ end }}
+
+{{ end }}

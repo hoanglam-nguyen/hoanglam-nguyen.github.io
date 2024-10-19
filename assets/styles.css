@@ -1,3 +1,8 @@
+.header-subtitle {
+    font-size: medium;
+    line-height: 1.5;
+}
+
 .post-line {
     margin-bottom: 0.5rem;
     display: flex;
