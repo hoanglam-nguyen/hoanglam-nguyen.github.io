@@ -8,11 +8,16 @@
         <p class="paper-authors"> {{ .Param "authors" | markdownify }} </p>
         <p class="mini-abstract"> Mini abstract: {{ .Summary }} </p>
         <p class="paper-booktitle"> {{ .Param "booktitle" | markdownify }} </p>
+        {{ if isset .Params "note" }}
+        <p class="mini-abstract">Note: {{ .Params.note }} </p>
+        {{ end }}
         {{ if gt (len .Content) 0 }}
             <a class="line-link" href="{{ .RelPermalink }}" style="display:inline-block;">[Details]</a>
         {{ end }}
         <a class="line-link" href="{{ .Params.publication }}" style="display:inline-block;">[Publication]</a>
+        {{ if isset .Params "preprint" }}
         <a class="line-link" href="/preprints/{{ .Params.preprint }}" style="display:inline-block;">[Preprint]</a>
+        {{ end }}
         {{ if isset .Params "artifact" }}
             <a class="line-link" href="{{ .Params.artifact }}" style="display:inline-block;">[Artifact]</a>
         {{ end }}
