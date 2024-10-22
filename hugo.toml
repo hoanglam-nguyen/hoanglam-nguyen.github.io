@@ -55,11 +55,11 @@ name = "dblp"
 class = "ai ai-dblp"
 url = "https://dblp.org/pid/214/0485.html"
 weight = 4
-[params.social.linkedin]
-name = "LinkedIn"
-class = "fab fa-linkedin"
-url = "https://de.linkedin.com/"
-weight = 5
+#[params.social.linkedin]
+#name = "LinkedIn"
+#class = "fab fa-linkedin"
+#url = "https://de.linkedin.com/"
+#weight = 5
 
 [menu]
 [[menu.main]]
