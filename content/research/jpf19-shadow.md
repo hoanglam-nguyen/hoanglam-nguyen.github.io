@@ -2,7 +2,6 @@
 title: "Complete Shadow Symbolic Execution with Java PathFinder"
 summary: We extend the idea of shadow symbolic execution to exhaustively search for test inputs that show divergent behavior between program versions (regression testing).
 date: 2019-12-12
-draft: true
 params:
     venue: JPF'19
     authors: "Yannic Noller, **Hoang Lam Nguyen**, Minxing Tang, Timo Kehrer, Lars Grunske"

@@ -2,7 +2,6 @@
 title: "MoFuzz: A Fuzzer Suite for Testing Model-Driven Software Engineering Tools"
 summary: We present approaches to effectively fuzz MDSE tools through the generation of valid test inputs (i.e., input models adhering to the constraints of a meta-model).
 date: 2021-01-27
-draft: true
 params:
     venue: ASE'20
     authors: "**Hoang Lam Nguyen**, Nebras Nassar, Timo Kehrer, Lars Grunske"

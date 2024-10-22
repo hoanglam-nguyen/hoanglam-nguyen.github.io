@@ -2,7 +2,6 @@
 title: "Evolutionary Testing for Program Repair"
 summary: Using bug reports to synthesize test oracles, we introduce a coevolutionary workflow that incrementally improves the test suite to produce better patches.
 date: 2024-05-27
-draft: true
 params:
     venue: ICST'24
     authors: "Haifeng Ruan, **Hoang Lam Nguyen**, Ridwan Shariffdeen, Yannic Noller, Abhik Roychoudhury"

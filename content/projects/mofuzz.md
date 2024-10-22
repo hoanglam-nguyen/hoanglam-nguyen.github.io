@@ -1,6 +1,5 @@
 ---
 title: "MoFuzz"
-draft: true
 weight: 2
 summary: Model-based fuzzing.
 params:
